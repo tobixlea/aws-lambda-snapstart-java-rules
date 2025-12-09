@@ -118,8 +118,8 @@ public class LambdaHandlerInitedWithRandomValueTest extends AbstractSnapStartTes
         assertThat(bugCollection, containsExactly(1, bugMatcherBuilder.atField("tsFromInstantNow").atLine(26).build()));
         assertThat(bugCollection, containsExactly(1, bugMatcherBuilder.atField("tsFromClock").atLine(27).build()));
         toBeFixed(() -> assertThat(bugCollection, containsExactly(1, bugMatcherBuilder.atField("logName").atLine(29).build())));
-        assertThat(bugCollection, containsExactly(4, snapStartBugMatcher().build()));
-        toBeFixed(() -> assertThat(bugCollection, containsExactly(5, snapStartBugMatcher().build())));
+        assertThat(bugCollection, containsExactly(8, snapStartBugMatcher().build()));
+        toBeFixed(() -> assertThat(bugCollection, containsExactly(9, snapStartBugMatcher().build())));
     }
 
     @Test

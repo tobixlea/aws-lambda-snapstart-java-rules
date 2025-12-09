@@ -53,6 +53,10 @@ public class LambdaUsingTs implements RequestHandler<Map<String,String>, String>
         out.println(tsFromSystemTimeNano);
         out.println(tsFromInstantNow);
         out.println(tsFromClock);
+        out.println(tsFromLocalDateTimeNow);
+        out.println(tsFromLocalDateNow);
+        out.println(tsFromLocalTimeNow);
+        out.println(tsFromZonedDateTimeNow);
         return "200";
     }
 }
